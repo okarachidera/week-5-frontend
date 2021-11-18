@@ -9,8 +9,9 @@ async function fetchAsync () {
         contentEl.innerHTML+=`        <div class="col-sm-3 space">
         <div class="card">
           <img
-            src="https://ng.jumia.is/unsafe/fit-in/680x680/filters:fill(white)/product/89/356924/1.jpg?5413"
+            src="${val['images'][0]}"
             class="card-img-top"
+            height="350px"
             alt="..."
           />
           <div class="card-body">
