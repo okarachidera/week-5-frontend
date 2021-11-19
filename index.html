@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -63,10 +65,7 @@
           <!-- Left links -->
 
           <div class="d-flex align-items-center">
-            <a
-              href="index.html"
-              type="button"
-              class="btn btn-link px-3 me-2"
+            <a href="index.html" type="button" class="btn btn-link px-3 me-2"
               >Home</a
             >
             <a
@@ -82,12 +81,13 @@
             >
               Admin dashboard
             </a>
-            <a
-              class="px-3"
-              href="checkout.html"
-              role="button"
-              ><i class="fas fa-cart-plus fs-2 text-dark"></i
-            ></a>
+            <a class="px-3" href="checkout.html" role="button"
+              >
+              <!-- <i class="fas fa-cart-plus fs-2 text-dark"></i> -->
+              <i class="fas fa-cart-plus fs-2 "></i>
+              <span id="cartid"class="badge rounded-pill badge-notification bg-danger">1</span>
+      
+          </a>
           </div>
         </div>
         <!-- Collapsible wrapper -->
@@ -100,8 +100,7 @@
     <!-- main content -->
 
     <div class="container">
-      <div class="row" id="content-id">
-      </div>
+      <div class="row" id="content-id"></div>
     </div>
 
     <!-- end main content -->

@@ -1,36 +1,50 @@
-let contentEl=document.getElementById('content-id');
-async function fetchAsync () {
-    let response = await fetch('https://chideranewwebapi.herokuapp.com/api');
-    let data = await response.json();
+let contentEl = document.getElementById("content-id");
+let cartidEl = document.getElementById("cartid");
+async function fetchAsync() {
+  let response = await fetch("https://chideranewwebapi.herokuapp.com/api");
+  let data = await response.json();
+  console.log(data);
 
-
-    let dataArr=data['data']
-    dataArr.forEach(val => {
-        contentEl.innerHTML+=`        <div class="col-sm-3 space">
+  let dataArr = data["data"];
+  dataArr.forEach((val) => {
+    contentEl.innerHTML += `        <div class="col-sm-3 space">
         <div class="card">
           <img
-            src="${val['images'][0]}"
+            src="${val["images"][0]}"
             class="card-img-top"
             height="350px"
             alt="..."
           />
           <div class="card-body">
-            <p class="card-title">Dorado Red Wine 75cl X 6</p>
-            <p class="card-text"><strong>N</strong> 5,000</p>
-            <a href="#!" class="btn btn-warning d-grid">Add Cart</a>
-            <a href="checkout.html" class="btn btn-success d-grid btn-color"
-              >checkout</a
+            <p class="card-title">${val["productName"]}</p>
+            <p class="card-text"><strong>N</strong> ${val["price"]}</p>
+
+            <div class="row">
+            <a id="addcartid" onclick="displaycon()" class="btn btn-dark col-8 btn-colorsp "
+              >Add Cart</a
             >
+            <button href="checkout.html" class="col-4 btn btn-primary fs-4"
+              ><i class="fa fa-cart-plus"></i> </button>
+            </div>
+            <br>
           </div>
+
         </div>
       </div>
-`
-    });
+`;
+  });
 
-    console.log(data['data'])
-    return data;
-  }
+  console.log(data["data"]);
+  return data;
+}
+
+fetchAsync();
+
+let sum=0
+function displaycon() {
+    sum++
+    cartidEl.innerHTML=sum
+}
 
 
-  fetchAsync () 
-
+displaycon()

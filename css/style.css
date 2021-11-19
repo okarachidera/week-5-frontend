@@ -14,8 +14,16 @@
 .btn-color{
     background-color: rgb(55, 25, 91);
 }
+.btn-colorsp{
+    background-color: rgb(55, 25, 91);
+    padding: 20px;
+}
 .spaceform{
     padding-left: 40px;
     padding-right: 40px;
     margin-top: 30px;
+}
+
+#addcart:hover{
+    display: block;
 }
