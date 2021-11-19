@@ -23,8 +23,8 @@ async function fetchAsync() {
             <a id="addcartid" onclick="displaycon()" class="btn btn-dark col-8 btn-colorsp "
               >Add Cart</a
             >
-            <button href="checkout.html" class="col-4 btn btn-primary fs-4"
-              ><i class="fa fa-cart-plus"></i> </button>
+            <a href="product.html?productid=${val['productId']}" class="col-4 btn btn-primary fs-4"
+              ><i class="fa fa-eye"></i> </a>
             </div>
             <br>
           </div>
