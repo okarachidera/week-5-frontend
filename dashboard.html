@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -6,7 +7,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>dashboard</title>
+    <title>Dashboard</title>
     <!-- Font Awesome -->
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
@@ -68,16 +69,13 @@
           <!-- Left links -->
 
           <div class="d-flex align-items-center">
-            <a
-              href="index.html"
-              type="button"
-              class="btn btn-link px-3 me-2"
+            <a href="index.html" type="button" class="btn btn-link px-3 me-2"
               >Home</a
             >
             <a
               href="dashboard.html"
               type="button"
-              class="btn btn-link px-3 me-2 "
+              class="btn btn-link px-3 me-2"
               >Add Product</a
             >
             <a
@@ -87,12 +85,13 @@
             >
               Admin dashboard
             </a>
-            <a
-              class="px-3"
-              href="checkout.html"
-              role="button"
-              ><i class="fas fa-cart-plus fs-2 text-dark"></i
-            ></a>
+            <a class="px-3" href="checkout.html" role="button"
+              >
+              <!-- <i class="fas fa-cart-plus fs-2 text-dark"></i> -->
+              <i class="fas fa-cart-plus fs-2 "></i>
+              <span id="cartid"class="badge rounded-pill badge-notification bg-danger">1</span>
+      
+          </a>
           </div>
         </div>
         <!-- Collapsible wrapper -->
@@ -298,7 +297,7 @@
                         <form id="retrieve-product-form" role="form">
                           <div class="controls">
                             <div class="row">
-                              <div class="col-md-6">
+                              <div class="col-md-12">
                                 <div class="form-group"> <label for="form_name">Find product</label> <input type="text"
                                     name="name" class="form-control" placeholder="Please enter your product Id"
                                     required="required" data-error="Firstname is required."> </div>

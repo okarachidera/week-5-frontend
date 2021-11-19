@@ -51,9 +51,7 @@ async function fetchAsync() {
                 <i class="far fa-star fa-sm text-primary"></i>
             </ul>
             <p><span class="mr-1"><strong>$${val['price']}</strong></span></p>
-            <p class="pt-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, sapiente illo. Sit
-              error voluptas repellat rerum quidem, soluta enim perferendis voluptates laboriosam. Distinctio,
-              officia quis dolore quos sapiente tempore alias.</p>
+            <p class="pt-1">${val['productDescription']}</p>
             <div class="table-responsive">
               <table class="table table-sm table-borderless mb-0">
                 <tbody>
@@ -63,11 +61,7 @@ async function fetchAsync() {
                   </tr>
                   <tr>
                     <th class="pl-0 w-25" scope="row"><strong>Color</strong></th>
-                    <td>Black</td>
-                  </tr>
-                  <tr>
-                    <th class="pl-0 w-25" scope="row"><strong>Delivery</strong></th>
-                    <td>USA, Europe</td>
+                    <td>${val['color']}</td>
                   </tr>
                 </tbody>
               </table>
