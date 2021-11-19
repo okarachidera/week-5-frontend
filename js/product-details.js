@@ -106,8 +106,8 @@ async function fetchAsync() {
                 </tbody>
               </table>
             </div>
-            <button type="button" class="btn btn-primary btn-md mr-1 mb-2">Buy now</button>
-            <button type="button" class="btn btn-light btn-md mr-1 mb-2"><i
+            <a href="checkout.html" type="button" class="btn btn-primary btn-md mr-1 mb-2">Buy now</a>
+            <button onclick="displaycon()" type="button" class="btn btn-light btn-md mr-1 mb-2"><i
                 class="fas fa-shopping-cart pr-2"></i>Add to cart</button>
           </div>
           </div>
@@ -121,5 +121,12 @@ async function fetchAsync() {
 }
 
 fetchAsync();
+
+let sum=0
+let cartidEl = document.getElementById("cartid");
+function displaycon() {
+    sum++
+    cartidEl.innerHTML=sum
+}
 
 
